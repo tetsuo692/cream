@@ -1,0 +1,7 @@
+en:
+  activerecord:
+    models:
+      contact: toto
+    attributes:
+      contact:
+        first_name: first name
