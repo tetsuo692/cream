@@ -1,0 +1,2 @@
+default: features --require features --format pretty --color --tags ~@wip
+wip: features  --require features --tags @wip
