@@ -1,7 +1,7 @@
-- semantic_form_for @contact do |f|
-  - f.inputs :name => 'Contacts' do
+= semantic_form_for @contact do |f|
+  = f.inputs :name => 'Contacts' do
     = f.input :civility
     = f.input :first_name
     = f.input :last_name
-    - f.buttons do
+    = f.buttons do
       = f.commit_button

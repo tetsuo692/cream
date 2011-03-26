@@ -1,8 +1,13 @@
 Cream::Application.routes.draw do
+
+  namespace "address_book" do
+    root :to => 'address_book_items#index'
+    resources :address_book_items
+    resources :contacts
+    resources :firms
+  end
+  # resources :contacts
   get "dashboard/index"
-
-  resources :contacts
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -13,6 +13,7 @@ describe "contacts/new.html.haml" do
 
     # Run the generator again with the --webrat-matchers flag if you want to use webrat matchers
     assert_select "form", :action => contacts_path, :method => "post" do
+      assert_select "input#contact_civility", :name => "contact[civility]"
       assert_select "input#contact_first_name", :name => "contact[first_name]"
       assert_select "input#contact_last_name", :name => "contact[last_name]"
     end

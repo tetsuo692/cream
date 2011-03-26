@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.1'
+gem 'rails', '3.0.5'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -12,18 +12,17 @@ gem 'rails', '3.0.1'
 gem 'devise'
 
 #DB
-gem 'mongoid', '2.0.0.beta.19'
-gem 'bson_ext', '1.1.5'
-
-gem 'inherited_resources', '>= 1.1.2'
+gem "mongoid", "2.0.0.rc.8"
+gem "bson_ext", "~> 1.2"
 
 #Views
-gem 'haml', '= 3.0.18'
+gem 'haml', '= 3.0.25'
 gem "haml-rails"
 gem 'jquery-rails'
 gem 'will_paginate'
 gem "formtastic", ">=1.1.0"
 gem "compass"
+gem 'inherited_resources', '~> 1.2.1'
 
 group :development do
   # Use unicorn as the web server

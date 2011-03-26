@@ -1,13 +1,11 @@
 %html
   %head
-    %title
-    = stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection'
-    = stylesheet_link_tag 'compiled/print.css', :media => 'print'
-    = stylesheet_link_tag 'formtastic'
-    /[if lt IE 8]
-      = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
-    = javascript_include_tag :defaults
-    = csrf_meta_tag
+    =render :partial => "shared/head"
   %body.bp.two-col
     #container
-      = yield
+      #header
+        = render 'shared/header'
+        = render 'shared/main_menu'
+      #content
+        = yield
+      #footer
