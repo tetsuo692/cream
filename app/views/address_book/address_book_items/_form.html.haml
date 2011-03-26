@@ -1,0 +1,13 @@
+= form_for @address_book_address_book_items do |f|
+  -if @address_book_address_book_items.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@address_book_address_book_items.errors.count, "error")} prohibited this address_book_address_book_items from being saved:"
+      %ul
+        - @address_book_address_book_items.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .actions
+    = f.submit 'Save'

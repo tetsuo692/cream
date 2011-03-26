@@ -1,0 +1,17 @@
+%h1 Listing address_book_items
+
+%table
+  %tr
+    %th Name
+    %th
+    %th
+    %th
+  - @address_book_items.each do |address_book_item|
+    %tr
+      %td= address_book_item.name
+      %td= link_to 'Show', address_book_address_book_items_path(address_book_item)
+      %td= link_to 'Destroy', address_book_item, :confirm => 'Are you sure?', :method => :delete
+
+%br
+  = link_to 'new', new_address_book_contact_path
+  = link_to 'new', new_address_book_firm_path

@@ -1,0 +1,2 @@
+module AddressBook::AddressBookItemsHelper
+end

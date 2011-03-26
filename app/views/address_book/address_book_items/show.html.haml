@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @address_book_address_book_items.name
+
+= link_to 'Edit', edit_address_book_address_book_items_path(@address_book_address_book_items)
+\|
+= link_to 'Back', address_book_address_book_items_path

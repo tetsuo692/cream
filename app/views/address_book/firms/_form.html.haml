@@ -1,0 +1,10 @@
+= form_for @address_book_firms do |f|
+  -if @address_book_firms.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@address_book_firms.errors.count, "error")} prohibited this address_book_firms from being saved:"
+      %ul
+        - @address_book_firms.errors.full_messages.each do |msg|
+          %li= msg
+
+  .actions
+    = f.submit 'Save'

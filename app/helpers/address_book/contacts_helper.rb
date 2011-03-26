@@ -1,0 +1,2 @@
+module AddressBook::ContactsHelper
+end
